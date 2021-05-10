@@ -1,0 +1,58 @@
+NOTITIES
+
+First name
+Last name
+Mobile number or email
+New password
+Birthday
+FemaleMale
+PHP FORM VALIDATION 
+
+Eisen
+•
+Gebruikers moeten zich kunnen registreren.
+•
+Gebruikers moeten hun eigen gegevens kunnen wijzigen.
+•
+Gebruikers moeten hun account kunnen verwijderen.
+•
+Gebruikers moeten kunnen inloggen
+met een e-mailadres en wachtwoord.
+•
+Gebruikers moeten kunnen uitloggen.
+•
+Wanneer een gebruiker het account verwijderd, moeten ook alle dagboeken en verhalen 
+verwijderd worden.
+•
+Gebruikers moeten verschillende dagboeken kunnen aanmaken.
+•
+Gebruikers moeten kunnen zien hoeveel verhalen er in een dagboek zitten.
+•
+Gebruikers moeten een verhaal in een dagboek kunnen plaatsen, waarbij de datum 
+automatisch wordt opgeslagen in de database.
+•
+Gebruikers moeten per dagboek hun verhalen kunnen inzien, waarbij de invoerdatum boven 
+het verhaal wordt getoond.
+•
+Gebruikers moeten op invoerdatum kunnen zoeken in een dagboek. Alleen het verhaal met 
+die datum moet dan getoond worden.
+•
+Gebruikers moeten een dagboek in z’n geheel kunnen verwijderen
+waarbij de verhalen in dat dagboek ook verwijderd worden.
+•
+De invoervelden moeten gevalideerd worden (doormiddel van JavaScript, PHPof HTML).
+•
+Alle queries (SQL code) moeten in PDOworden uitgevoerd doormiddel van prepared statements.
+•
+Het wachtwoord moet versleuteld in de database worden opgeslagen.
+•
+Gebruikers mogen alleen eendagboek aanmaken en verwijderen, verhalenplaatsen en 
+inzien of hun gegevens wijzigen als ze zijn ingelogd. Niet ingelogde gebruikers mogen geen 
+toegang hebben tot deze pagina’s.
+•
+Gebruikers mogen alleen hun eigen dagboeken en verhaleninzien.
+
+
+opdrachten voor mezelf.
+gebruiker moet privacy aan en uit kunnen zetten.
+grbuiker mag fotos en videos uploaden.

@@ -1,0 +1,180 @@
+
+.navbar{
+	background-color: #00BFFF;
+
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: none;
+    color:white;
+}
+
+li {
+    float: left;
+    padding-right: 15px;
+}
+
+li h1{
+	line-height: 90px;
+}
+
+li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 35px 35px;
+    margin: 0px;
+    text-decoration: none;
+    border: 1px;
+}
+
+li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+li a.active {
+    color: white;
+    background-color: #4CAF50;
+}
+.logo{
+	margin-top: 0px;
+	color: black;
+	position: absolute;
+	right: 100px;
+	border-style: solid;
+	border-color: #e7e7e7;
+	border-width: 1px;
+}
+
+#dagboek{			//img
+	right: 100px;
+	width: 120px;
+	height: 100px;
+	position: relative;
+	border-style: solid;
+	border-color: #e7e7e7;
+	border-width: 1px;
+	border-radius: 20px
+}
+.forma{
+	background-color: none;
+	top: 0px;
+	max-width: 60%;
+	max-height: 100%;
+	margin: 15px;
+	position: relative;
+	padding: 15px;
+	color:white;
+}
+.formb{
+	background-color: #E6E6FA;
+	top: 20px;
+	max-width: 100%;
+	max-height: 100%;
+	margin: 15px;
+	position: relative;
+	padding: 15px;
+	border-style: solid;
+	border-color: #e7e7e7;
+	border-width: 1px;
+}
+
+.formc{
+	background-color: #E6E6FA;
+	top: 20px;
+	max-width: 100%;
+	max-height: 100%;
+	margin: 15px;
+	position: relative;
+	padding: 15px;
+	border-style: solid;
+	border-color: #e7e7e7;
+	border-width: 1px;
+}
+
+
+label{								/* balken*/
+    float: left;
+    clear: left;
+    padding-top: 2px;
+    width: 100px;
+}
+input, select, textarea{				/* balken zelf*/
+	left: 30px;
+/*    display: block;	*/
+    padding: 5px 5px 5px 5px;
+    text-align: left;
+}
+
+
+.nav{
+	/*top: 0pc;*/
+}
+.addbutton{
+	margin-left: 10px;
+}
+.diary{
+	margin-left: 50px;
+	background-color: turquoise;
+	border: solid 5px #000;
+	color: #FFF
+}
+.diary th{
+	border: solid 2px #000;
+	min-width: 200px;
+	text-align: center;
+}
+.diary td{
+	border: solid 2px #000;
+	text-align: center;	
+}
+.diary td:nth-child(1){
+	text-align: center;	
+}
+
+.myTable{
+	padding-left: 20px;
+	background-color: turquoise;
+	border: solid 5px #000;
+	color: #FFF
+}
+.myTable th{
+	border: solid 2px #000;
+	min-width: 200px;
+	text-align: center;
+}
+.myTable td{
+	border: solid 2px #000;
+	text-align: center;	
+}
+.myTable td:nth-child(1){
+	text-align: center;	
+}
+
+.Gegevens{
+	background-color: turquoise;
+	border: solid 5px #000;
+	color: #FFF
+}
+.Gegevens th{
+	border: solid 2px #000;
+	min-width: 200px;
+	text-align: center;
+}
+.Gegevens td{
+	border: solid 2px #000;
+	text-align: center;	
+}
+.Gegevens td:nth-child(1){
+	text-align: center;	
+}
+.DeleteAccount{
+	display: block;
+	margin: 10px auto;
+}
+
+.search{
+	float: right;
+}
