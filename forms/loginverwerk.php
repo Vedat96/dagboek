@@ -32,7 +32,7 @@
 			$wachtwoord= $_POST['wachtwoord'];
 			$login=$user->login($_POST['email'],$_POST['wachtwoord']);
 
-			header('Location: ../welcome.php');
+			header('Location: ../views/welcome.php');
 		// geeft error
 		} 
 		// if (!empty($email) && !empty($wwoord) && !empty($error)) {
@@ -41,7 +41,7 @@
 
 		else {
 			$_SESSION['error_register'] = $error;
-			header('Location: ../relog.php');
+			header('Location: ../views/relog.php');
 		}
 		// elseif(empty($error)){
 		// 	echo("<script>alert('Geen geldig account!')</script>");
@@ -56,7 +56,7 @@
 		//  // echo("<script>window.location = 'home.php';</script>");
 		// }
 	} else {
-		header('Location: ../index.php');
+		header('Location: ../views/index.php');
 	}
 
 	// echo '<br>gebruiker '.$_SESSION['id_gebruiker'];

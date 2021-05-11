@@ -25,7 +25,7 @@ if (isset($_SESSION['id_gebruiker'])) {
 	    if (isset($_POST['deleteDiary'])) {
 	    	// verwijdert alleen de diary
 	    	$deletedata = $deleteDD->delete($_POST['id']); //MOET POST ZIJN
-	        header('Location: ../diary.php');
+	        header('Location: ../views/diary.php');
 	        
 	    } else {
 	        echo 'niet gelukt';
@@ -39,6 +39,6 @@ if (isset($_SESSION['id_gebruiker'])) {
 	  return $data;
 	}
 } else {
-	header("Location: ../error.php");
+	header("Location: ../views/error/error.php");
 }
 ?>

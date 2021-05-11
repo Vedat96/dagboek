@@ -3,37 +3,20 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL); 
 // storydata.php wordt geinclude
-require 'forms/storydata.php';
+require '../forms/storydata.php';
 // als er sessie is voert hij de pagina uit anders stuurt hij hem weg
 if (isset($_SESSION['id_gebruiker'])) {
 ?>
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<title>Home</title>
 </head>
 <body>
-	<header>
-		<div class="navbar">
-			<ul>
-				<!-- <li><a href="index.php">Log in</a></li>
-				<li><a href="register.php">Register</a></li> -->
-				<li><img src="images/dagboek.jpg" id="dagboek"></li>
-				<li><H1> Mijn Dagboek</H1></li>
-			</ul> 
-			<form action="forms/logout.php" method="POST">
-				<input type="submit" value="Log uit" name="loguit">
-			</form>
-		</div>
-	</header>
-	<div class="nav">
-		<ul>
-			<li><H3><a href="diary.php">Dagboeken</a></H3></li>
-			<li><H3><a href="account.php"> Mijn account</a></H3></li>
-		</ul> 
-	</div>
+	<?php include 'partials/menu.php'; ?>
+	
 	<hr>
 	<div class="container">
 		<!-- form voor zoeken -->
@@ -65,7 +48,7 @@ if (isset($_SESSION['id_gebruiker'])) {
 		</form>
 
 	<!-- form om een verhaal toe te voegen -->
-		<form action="forms/verhaal-aanmaken.php" class= "addbutton" method="POST">
+		<form action="../forms/verhaal-aanmaken.php" class= "addbutton" method="POST">
 			Voeg een verhaal toe
 			<input type="text" value="" required name="addStory">
 			<button> Opslaan</button>
@@ -120,7 +103,7 @@ if (isset($_SESSION['id_gebruiker'])) {
 <?php
 // bij geen sessie kan je niet deze site io.
 } else {
-	header("Location: error.php");
+	header("Location: error/error.php");
 }
 ?>
 </html>

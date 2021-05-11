@@ -45,7 +45,7 @@ if (isset($_SESSION['id_gebruiker'])) {
         // /$deleteAllData = $deleteacc->deleteAll($_SESSION['id_gebruiker']);
         // stopt de sessie als er op verijder wordt geklikt
           session_destroy(); 
-          header('Location: ../bye.php');
+          header('Location: ../views/bye.php');
           
       } else {
           echo 'niet gelukt';
@@ -59,6 +59,6 @@ if (isset($_SESSION['id_gebruiker'])) {
     return $data;
   }
 } else {
-  header("Location: ../error.php");
+  header("Location: ../views/error/error.php");
 }
 ?>

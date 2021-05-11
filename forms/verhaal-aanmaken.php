@@ -19,15 +19,15 @@ if (isset($_SESSION['id_gebruiker'])) {
 		$story = new Diaries();
 		$create = $story->addStory($post, $_SESSION['id_dagboek']);
 		if ($create == true) {
-			header('Location: ../story.php');
+			header('Location: ../views/story.php');
 
 		} else {
 			echo "nope";
 		}
 	} else {
-		header('Location: ../index.php');
+		header('Location: ../views/index.php');
 	}
 } else {
-	header("Location: ../error.php");
+	header("Location: ../views/error/error.php");
 }
 ?>

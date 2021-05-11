@@ -61,17 +61,17 @@
 			$create = $user->register($voornaam, $tussenvoegsel,$achternaam,$email,$wachtwoord);
 			if (is_numeric($create)){
 				$_SESSION['id_gebruiker'] = $create;
-				header('Location: ../welcome.php');
+				header('Location: ../views/welcome.php');
 			} else {
 				echo "mislukt";
 			}
 		// geeft errors 
 		} else {
 			$_SESSION['error_register'] = $error;
-			header('Location: ../');
+			header('Location: ../views/');
 		}
 	} else {
-		header('Location: ../');
+		header('Location: ../views/');
 	}
 
 

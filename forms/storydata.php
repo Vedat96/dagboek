@@ -4,7 +4,7 @@
 	ini_set('display_startup_errors', 1);
 	error_reporting(E_ALL);
 
-	require './src/diaries.php';
+	require '../src/diaries.php';
 
 	if (isset($_SESSION['id_gebruiker'])) {
 
@@ -24,7 +24,7 @@
 	// $storydata = $story->showStory($_SESSION['posts.id_post'], $_POST['post'], date('YY-mm-dd'));
 
 	} else {
-	header("Location: ../error.php");
+	header("Location: ../views/error/error.php");
 
 }
 ?>

@@ -6,23 +6,20 @@ session_start();
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<title>Home</title>
 </head>
 <body>
-	<header>
-		<div class="navbar">
-			<ul>
-				<li><img src="images/dagboek.jpg" id="dagboek"></li>
-				<li><H1><a href="index.php" style="color:white; text-decoration: none; padding: 10px; "> Mijn Dagboek</a></H1></li>
-			</ul> 
-		</div>
-	</header>
+	<?php include 'partials/menu.php'; ?>
+
+	<div class="container" style="text-align: right; position: absolute; display: block; margin: auto;">
+	<h1>Probeer het opnieuw</h1>
+</div>
 	<!-- log in form -->
 	<div class="formc">
 		<h2>Log in</h2>
-		<form action="forms/loginverwerk.php" method="POST">
+		<form action="../forms/loginverwerk.php" method="POST">
 			Email:
 			<input type="text" name="email" value="" placeholder="Email">
 			Wachtwoord:
@@ -36,7 +33,6 @@ session_start();
 			?>
 		</form> 
 	</div>
-
 </body>
 </html>
 <?php

@@ -63,22 +63,24 @@ if (isset($_SESSION['id_gebruiker'])) {
 			$editdata = $user->edit($_SESSION['id_gebruiker'], $_POST['voornaam'], $_POST['tussenvoegsel'],$_POST['achternaam'],$_POST['email'],$_POST['wachtwoord']);
 			// als de gegevns zijn gewijzigd wordt het doorgestuurd
 			if ($editdata === true) {
-				header('Location: ../account.php');
-				echo 'gegevens zijn gewijzigd';
+				echo "<script type='text/javascript'>alert('Uw gegevens zijn gewijzigd');
+				window.location.href='../views/account.php';</script>";
+				// echo 'gegevens zijn gewijzigd';
+				// header('Location: ../views/account.php');
 			} else {
 				echo 'Het wijzigen van uw gegevens is mislukt.';
 			}
 			// als er errors zijm worden die getoont
 		} else {
 			$_SESSION['error_register'] = $error;
-			header('Location: ../account.php');
+			header('Location: ../views/account.php');
 		}
 
 	} else {
 		echo "nope";
 	}
 } else {
-	header("Location: ../error.php");
+	header("Location: ../views/error/error.php");
 
 }
 ?>

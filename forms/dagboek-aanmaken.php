@@ -20,19 +20,19 @@ if (isset($_SESSION['id_gebruiker'])) {
 		$diary = new Diaries();
 		$create = $diary->addDiary($naam, $_SESSION['id_gebruiker']);
 		if ($create == true) {
-			header('Location: ../diary.php');
+			header('Location: ../views/diary.php');
 
 		} else {
 			echo "nope";
 		}
 	} else {
-		header('Location: ../index.php');
+		header('Location: ../views/index.php');
 	}
 
 
 
 } else {
-	header("Location: ../error.php");
+	header("Location: ../views/error/error.php");
 
 }
 ?>

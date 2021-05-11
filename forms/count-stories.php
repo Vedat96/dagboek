@@ -3,7 +3,7 @@
 	ini_set('display_errors', 1);
 	ini_set('display_startup_errors', 1);
 	error_reporting(E_ALL);
-	require 'src/diaries.php';
+	require '../src/diaries.php';
 if (isset($_SESSION['id_gebruiker'])) {
 
 	// $story = new Diaries();
@@ -13,7 +13,7 @@ if (isset($_SESSION['id_gebruiker'])) {
 	echo count($cars);
 
 } else {
-	header("Location: ../error.php");
+	header("Location: ../views/error/error.php");
 
 }
 ?>

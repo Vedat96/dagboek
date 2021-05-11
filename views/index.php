@@ -6,7 +6,7 @@ session_start();
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<title>Home</title>
 </head>
@@ -14,13 +14,13 @@ session_start();
 	<header>
 		<div class="navbar">
 			<ul>
-				<li><img src="images/dagboek.jpg" id="dagboek"></li>
+				<li><img src="../images/dagboek.jpg" id="dagboek"></li>
 				<li><H1> Mijn Dagboek</H1></li>
 			</ul> 
 			<!-- log in form -->
 			<div class="forma">
 				<h3>Log in</h3>
-				<form action="forms/loginverwerk.php" method="POST">
+				<form action="../forms/loginverwerk.php" method="POST">
 					Email:
 					<input type="text" name="email" value="" placeholder="Email">
 					Wachtwoord:
@@ -34,7 +34,7 @@ session_start();
 <!-- register form -->
 	<div class="formb">
 		<h3>Registreer</h3>
-		<form action="forms/registerverwerk.php" method="POST">
+		<form action="../forms/registerverwerk.php" method="POST">
 			<?php
 			// de errors worden hier getoond
 			if (isset($_SESSION['error_register'])) {

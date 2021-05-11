@@ -1,7 +1,7 @@
 <?php ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL); 
-
+session_start();
 ?>
 <!DOCTYPE html>
 <html>
@@ -11,19 +11,11 @@ error_reporting(E_ALL);
 	<title>Home</title>
 </head>
 <body>
-	<header>
-		<div class="navbar">
-			<ul>
-				<!-- <li><a href="index.php">Log in</a></li>
-				<li><a href="register.php">Register</a></li> -->
-				<li><img src="images/dagboek.jpg" id="dagboek"></li>
-				<li><H1> Mijn Dagboek</H1></li>
-			</ul> 
-		</div>
-	</header>
-	<div class="nav">
-		<h2 style="padding-left: 400px;">Your account is deleted</style></h2>
+ 	<?php include 'menu.php'; ?>
+ 	
+	<div style="margin: 20px;">
+		<h2>U bent niet ingelogd. Log in om door te gaan of registreer als u geen account heeft.</h2>
+		<h3><a href="index.php">Klik hier om terug te gaan</a></h3>
 	</div>
-	<a href="index.php" style="padding-left: 480px"> Ga naar de homepagina</a>
 </body>
 </html>
